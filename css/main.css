@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", "微软雅黑", verdana;
+    list-style: none;
+}
+.clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }
+
+.clearfix {*zoom: 1;}
+
+.header {
+    height: 36px;
+    width: 100%;
+    background-color: #363636;
+    position: relative;
+}
+.middle{
+    height: 36px;
+    width: 1090px;
+    position:absolute;
+    left:50%;
+    margin-left:-545px;
+}
+
+.siteNav1 {
+    position: absolute;
+    height: 36px;
+    width: 400px;
+    /*left:150px;*/
+
+}
+
+.siteNav1 .siteItem {
+    width: 108px;
+    height: 100%;
+    float: left;
+}
+
+.siteNav1 .siteItem a {
+    line-height: 36px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.siteNav1 .siteItem a:hover {
+    color: white;
+}
+
+.siteNav1 .billboard {
+    overflow: hidden;
+    height: 100%;
+    width: 280px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.siteNav1 .billboard img{
+    margin:11px 0 11px 10px;
+    height: 14px;
+    width:14px;
+}
+.siteNav1 .billboard div{
+    position:absolute;
+}
+
+.siteNav1 .billboard li a {
+    line-height: 36px;
+    padding-left: 40px;
+    color: #b4a078;
+    font-size: 12px;
+
+}
+.siteNav1 .billboard li a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.siteNav2 {
+    width: 500px;
+    height: 36px;
+    float: right;
+}
+.siteNav2>div {
+    float:left;
+}
+.siteNav2>div a{
+    line-height: 36px;
+    color: #ccc;
+    font-size: 12px;
+    margin:0 5px 0 5px;
+    text-decoration: none;
+}
+.siteNav2>div:nth-child(n+2)>a:before{
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+}
+.arrow-white-down{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 11px;
+    height: 5px;
+    background: url("../images/精灵图.png") no-repeat 0px -321px;
+    margin-right:5px;
+    transition: all ease 0s 0s;
+}
+.siteNav2 div:nth-child(7):hover .arrow-white-down{
+    transform: rotate(180deg);
+}
+.drop-down-list{
+    width: 80px;
+    height: 150px;
+    position:relative;
+    background-color: white;
+    left: 10px;
+    display: none;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    z-index: 999;
+}
+.drop-down-list:after{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: -8px;
+    border-left: solid 8px transparent;
+    border-bottom: solid 8px #E2E3E4;
+    border-right: solid 8px transparent;
+}
+.drop-down-list a{
+    display: block;
+    font-size: 12px;
+    vertical-align:middle;
+    text-align:center;
+    color:white;
+}
+.drop-down-list a:hover{
+    color:#b4a078;
+}
+.drop-down-list li:nth-child(n+2):before{
+    content: '';
+    display: block;
+    margin-right: 10px;
+    /*height: 10px;*/
+    width: 80px;
+    border-bottom: 1px solid #b4a078;
+    vertical-align: middle;
+}
+.phone{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../images/精灵图.png") no-repeat 0px 0px;
+    margin-right:5px;
+    margin-left: 10px;
+    transition: all ease 0s 0s;
+    height: 11px;
+    width: 7px;
+}
+.on{
+    display: block;
+}
+.QRcode{
+    height:150px;
+    width:150px;
+    position: absolute;
+    right:-50px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    display:none;
+    z-index: 999;
+
+}
+.QRcode span{
+    font-size: 12px;
+    color:#b4a078;
+    line-height: 12px;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.QRcode img{
+    width:120px;
+    height: 120px;
+    margin-left:15px;
+    margin-top:5px;
+}
+.QRcode:after{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: -8px;
+    border-left: solid 8px transparent;
+    border-bottom: solid 8px #E2E3E4;
+    border-right: solid 8px transparent;
+}
+.show{
+    display: block;
+}
+/*头部结束*/
+/*功能区*/
+.funcTab{
+    height:240px;
+    background-color: #FFFFFF;
+    position: relative;
+
+}
+.row{
+    position: relative;
+    width:1090px;
+    height: 240px;
+    background-color: white;
+    left:50%;
+    margin-left:-545px;
+}
+.logo{
+    display: block;
+    width: 180px;
+    position:absolute;
+    top: 50px;
+    left: 400px;
+}
+.logo i{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    /*cursor: pointer;*/
+    background: url("../images/精灵图.png") no-repeat 0px -146px;
+    margin-right:5px;
+    margin-left: 10px;
+    transition: all ease 0s 0s;
+    height: 60px;
+    width: 180px;
+}
+.search{
+    position: relative;
+    margin-top: 75px;
+    margin-right:100px;
+    float: right;
+    width: 272px;
+    height: 22px;
+}
+.search input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    border: 0;
+    border-bottom: 1px solid #D8CEBC;
+    font-size: 12px;
+    width: 252px;
+    outline: 0;
+    overflow: hidden;
+}
+.searchButton{
+    float: right;
+    cursor: pointer;
+}
+.searchButton i{
+    display: inline-block;
+    overflow: hidden;
+    /*vertical-align: middle;*/
+    /*cursor: pointer;*/
+    background: url("../images/精灵图.png") no-repeat 0px -146px;
+    background-position: 0 -291px;
+    height: 20px;
+    width: 20px;
+}
+.searchButton i:hover{
+    background-position: 0 -261px;
+}
+.defaultText{
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 11px;
+    /*display: block;*/
+    line-height: 1;
+    cursor: text;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 230px;
+    text-overflow: ellipsis;
+    color: #9C9C9C;
+    z-index: 1;
+    touch-action: none;
+    pointer-events: none;
+}
+.cartWrap{
+    width: 34px;
+    height: 32px;
+    position:absolute;
+    left:1020px;
+    top:65px;
+}
+.cart{
+    display: inline-block;
+    /*overflow: hidden;*/
+    background: url("../images/精灵图.png") no-repeat -3px -113px;
+    height: 23px;
+    width: 23px;
+    margin-top: 9px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.slideDoor{
+    display: inline-block;
+    /*overflow: hidden;*/
+    background: url("../images/精灵图.png") no-repeat 0px -51px;
+    height: 19px;
+    width: 19px;
+    padding-left: 5px;
+    z-index: 2;
+    position: absolute;
+    line-height: 19px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    /*text-align: center;*/
+}
+/*.slideDoor span{*/
+/*display: inline-block;*/
+/*!*background: url("精灵图1.png") no-repeat 0px -21px;*!*/
+/*height: 19px;*/
+/*z-index: 2;*/
+
+
+/*padding-right: 5px;*/
+
+/*}*/
+.tabNav{
+    width:1090px;
+    height:30px;
+    position:absolute;
+    display: block;
+    /*background-color: pink;*/
+    bottom: 45px;
+    left: 50%;
+    margin-left:-545px;
+}
+.tabNav li{
+    padding: 0 24px;
+    display: inline-block;
+
+}
+.tabNav li a{
+
+    line-height: 30px;
+    font-size: 13px;
+    font-weight:700;
+    text-decoration: none;
+    color: black;
+}
