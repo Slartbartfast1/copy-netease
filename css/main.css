@@ -5,9 +5,18 @@
     font-family: "Microsoft Yahei", "微软雅黑", verdana;
     list-style: none;
 }
-.clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }
 
-.clearfix {*zoom: 1;}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
 
 .header {
     height: 36px;
@@ -15,12 +24,13 @@
     background-color: #363636;
     position: relative;
 }
-.middle{
+
+.middle {
     height: 36px;
     width: 1090px;
-    position:absolute;
-    left:50%;
-    margin-left:-545px;
+    position: absolute;
+    left: 50%;
+    margin-left: -545px;
 }
 
 .siteNav1 {
@@ -56,13 +66,15 @@
     margin-left: 10px;
     position: relative;
 }
-.siteNav1 .billboard img{
-    margin:11px 0 11px 10px;
+
+.siteNav1 .billboard img {
+    margin: 11px 0 11px 10px;
     height: 14px;
-    width:14px;
+    width: 14px;
 }
-.siteNav1 .billboard div{
-    position:absolute;
+
+.siteNav1 .billboard div {
+    position: absolute;
 }
 
 .siteNav1 .billboard li a {
@@ -72,8 +84,9 @@
     font-size: 12px;
 
 }
-.siteNav1 .billboard li a:hover{
-    color:white;
+
+.siteNav1 .billboard li a:hover {
+    color: white;
     text-decoration: none;
 }
 
@@ -82,17 +95,20 @@
     height: 36px;
     float: right;
 }
-.siteNav2>div {
-    float:left;
+
+.siteNav2 > div {
+    float: left;
 }
-.siteNav2>div a{
+
+.siteNav2 > div a {
     line-height: 36px;
     color: #ccc;
     font-size: 12px;
-    margin:0 5px 0 5px;
+    margin: 0 5px 0 5px;
     text-decoration: none;
 }
-.siteNav2>div:nth-child(n+2)>a:before{
+
+.siteNav2 > div:nth-child(n+2) > a:before {
     content: '';
     display: inline-block;
     margin-right: 10px;
@@ -100,7 +116,8 @@
     border-left: 1px solid #5c5c5c;
     vertical-align: middle;
 }
-.arrow-white-down{
+
+.arrow-white-down {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
@@ -108,23 +125,26 @@
     width: 11px;
     height: 5px;
     background: url("../images/精灵图.png") no-repeat 0px -321px;
-    margin-right:5px;
+    margin-right: 5px;
     transition: all ease 0s 0s;
 }
-.siteNav2 div:nth-child(7):hover .arrow-white-down{
+
+.siteNav2 div:nth-child(7):hover .arrow-white-down {
     transform: rotate(180deg);
 }
-.drop-down-list{
+
+.drop-down-list {
     width: 80px;
     height: 150px;
-    position:relative;
+    position: relative;
     background-color: white;
     left: 10px;
     display: none;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
     z-index: 999;
 }
-.drop-down-list:after{
+
+.drop-down-list:after {
     width: 0;
     height: 0;
     content: "";
@@ -136,17 +156,20 @@
     border-bottom: solid 8px #E2E3E4;
     border-right: solid 8px transparent;
 }
-.drop-down-list a{
+
+.drop-down-list a {
     display: block;
     font-size: 12px;
-    vertical-align:middle;
-    text-align:center;
-    color:white;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
 }
-.drop-down-list a:hover{
-    color:#b4a078;
+
+.drop-down-list a:hover {
+    color: #b4a078;
 }
-.drop-down-list li:nth-child(n+2):before{
+
+.drop-down-list li:nth-child(n+2):before {
     content: '';
     display: block;
     margin-right: 10px;
@@ -155,47 +178,53 @@
     border-bottom: 1px solid #b4a078;
     vertical-align: middle;
 }
-.phone{
+
+.phone {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
     background: url("../images/精灵图.png") no-repeat 0px 0px;
-    margin-right:5px;
+    margin-right: 5px;
     margin-left: 10px;
     transition: all ease 0s 0s;
     height: 11px;
     width: 7px;
 }
-.on{
+
+.on {
     display: block;
 }
-.QRcode{
-    height:150px;
-    width:150px;
+
+.QRcode {
+    height: 150px;
+    width: 150px;
     position: absolute;
-    right:-50px;
+    right: -50px;
     background-color: white;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
-    display:none;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+    display: none;
     z-index: 999;
 
 }
-.QRcode span{
+
+.QRcode span {
     font-size: 12px;
-    color:#b4a078;
+    color: #b4a078;
     line-height: 12px;
     display: inline-block;
     margin-left: 10px;
 
 }
-.QRcode img{
-    width:120px;
+
+.QRcode img {
+    width: 120px;
     height: 120px;
-    margin-left:15px;
-    margin-top:5px;
+    margin-left: 15px;
+    margin-top: 5px;
 }
-.QRcode:after{
+
+.QRcode:after {
     width: 0;
     height: 0;
     content: "";
@@ -207,53 +236,60 @@
     border-bottom: solid 8px #E2E3E4;
     border-right: solid 8px transparent;
 }
-.show{
+
+.show {
     display: block;
 }
+
 /*头部结束*/
 /*功能区*/
-.funcTab{
-    height:240px;
+.funcTab {
+    height: 240px;
     background-color: #FFFFFF;
     position: relative;
 
 }
-.row{
+
+.row {
     position: relative;
-    width:1090px;
+    width: 1090px;
     height: 240px;
     background-color: white;
-    left:50%;
-    margin-left:-545px;
+    left: 50%;
+    margin-left: -545px;
 }
-.logo{
+
+.logo {
     display: block;
     width: 180px;
-    position:absolute;
+    position: absolute;
     top: 50px;
     left: 400px;
 }
-.logo i{
+
+.logo i {
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
     /*cursor: pointer;*/
     background: url("../images/精灵图.png") no-repeat 0px -146px;
-    margin-right:5px;
+    margin-right: 5px;
     margin-left: 10px;
     transition: all ease 0s 0s;
     height: 60px;
     width: 180px;
 }
-.search{
+
+.search {
     position: relative;
     margin-top: 75px;
-    margin-right:100px;
+    margin-right: 100px;
     float: right;
     width: 272px;
     height: 22px;
 }
-.search input{
+
+.search input {
     position: absolute;
     left: 0;
     top: 0;
@@ -268,11 +304,13 @@
     outline: 0;
     overflow: hidden;
 }
-.searchButton{
+
+.searchButton {
     float: right;
     cursor: pointer;
 }
-.searchButton i{
+
+.searchButton i {
     display: inline-block;
     overflow: hidden;
     /*vertical-align: middle;*/
@@ -282,10 +320,12 @@
     height: 20px;
     width: 20px;
 }
-.searchButton i:hover{
+
+.searchButton i:hover {
     background-position: 0 -261px;
 }
-.defaultText{
+
+.defaultText {
     font-size: 12px;
     position: absolute;
     top: 5px;
@@ -302,14 +342,16 @@
     touch-action: none;
     pointer-events: none;
 }
-.cartWrap{
+
+.cartWrap {
     width: 34px;
     height: 32px;
-    position:absolute;
-    left:1020px;
-    top:65px;
+    position: absolute;
+    left: 1020px;
+    top: 65px;
 }
-.cart{
+
+.cart {
     display: inline-block;
     /*overflow: hidden;*/
     background: url("../images/精灵图.png") no-repeat -3px -113px;
@@ -319,7 +361,8 @@
     text-decoration: none;
     cursor: pointer;
 }
-.slideDoor{
+
+.slideDoor {
     display: inline-block;
     /*overflow: hidden;*/
     background: url("../images/精灵图.png") no-repeat 0px -51px;
@@ -334,36 +377,255 @@
     color: white;
     /*text-align: center;*/
 }
+
 /*.slideDoor span{*/
 /*display: inline-block;*/
 /*!*background: url("精灵图1.png") no-repeat 0px -21px;*!*/
 /*height: 19px;*/
 /*z-index: 2;*/
 
-
 /*padding-right: 5px;*/
 
 /*}*/
-.tabNav{
-    width:1090px;
-    height:30px;
-    position:absolute;
+.tabNav {
+    width: 1090px;
+    height: 30px;
+    position: absolute;
     display: block;
     /*background-color: pink;*/
     bottom: 45px;
     left: 50%;
-    margin-left:-545px;
+    margin-left: -545px;
 }
-.tabNav li{
+
+.tabNav > li {
     padding: 0 24px;
     display: inline-block;
 
 }
-.tabNav li a{
+
+.tabNav li > a {
 
     line-height: 30px;
     font-size: 13px;
-    font-weight:700;
+    font-weight: 700;
     text-decoration: none;
     color: black;
 }
+
+.firstItem {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.tabNav > li > a:hover {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.cateCardList {
+    display: none;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /*padding-left: 50%;*/
+    height: 200px;
+    /*background-color: pink;*/
+    background-color: white;
+}
+
+.cateCardList li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    margin-top: 0;
+
+}
+
+.sliderBox {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.sliderBox a {
+    /*display: block;*/
+    /*height: 400px;*/
+    /*background-color: pink;*/
+}
+
+.sliderBox img {
+    height: 420px;
+    position: absolute;
+    width: 100%;
+
+}
+
+.sliderImg {
+    position: absolute;
+    height: 420px;
+    width: 100%;
+    display: none;
+}
+
+.prev {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 50%;
+    left: 150px;
+    top: 180px;
+    background: url("../images/精灵图2.png") no-repeat -0px -4839px;
+    background-color: #D0C4AF;
+}
+
+.slider-button {
+    z-index: 9999;
+    position: relative;
+}
+
+.prev:hover {
+    background-color: #b4a078;
+}
+
+.next {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 50%;
+    right: 150px;
+    top: 180px;
+    background: url("../images/精灵图2.png") no-repeat -0px -5019px;
+    background-color: #D0C4AF;
+}
+
+.next:hover {
+    background-color: #b4a078;
+}
+
+.dots {
+    width: 300px;
+    height: 20px;
+    position: relative;
+    /*background-color: rgba(0,0,0,.3);*/
+    left: 50%;
+    top: 380px;
+    margin-left: -150px;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.dots ul {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    float: left;
+    margin: 5px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease 0.5s 0s;
+}
+
+.active {
+    box-shadow: 0 0 0 4px #dfcead;
+    background: #a7936e;
+}
+
+.manuFacturer {
+    width: 1090px;
+    height: 320px;
+    position: relative;
+    left: 50%;
+    margin-left: -545px;
+    /*background-color: pink;*/
+    top: 100px;
+
+}
+
+.firstLarge, .secondLarge {
+    width: 357px;
+    height: 320px;
+    background-color: pink;
+    float: left;
+    margin-left: 5px;
+
+}
+
+.firstSmall, .secondSmall {
+    width: 357px;
+    height: 155px;
+    /*background-color: yellow;*/
+    float: left;
+
+    margin-left: 5px;
+}
+
+.secondSmall {
+    margin-top: 5px
+}
+
+.manuFacturer .name {
+    font-size: 24px;
+    margin: 48px 0 19px;
+    line-height: 1;
+    border-right: 0;
+    border-left: 0;
+    position: relative;
+    color: #666;
+    z-index: 99;
+}
+.firstLarge{
+    text-align: center;
+    background-color: #F5EEEC;
+    overflow: hidden;
+
+}
+.firstLarge .price {
+    font-size: 14px;
+    padding-top: 17px;
+    border-top: 1px solid #666;
+    display: inline-block;
+    z-index:999;
+
+}
+.firstLargeImage{
+    /*top:*/
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position:relative;
+    margin-top:0px;
+}
+.firstLargeImage img{
+    width: 357px;
+    height: 320px;
+    top: -120px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all ease 1s 0s;
+    z-index: 1;
+}
+.firstLargeImage img:hover{
+    width:105%;
+    height: 105%;
+}
+
+
+
+
+

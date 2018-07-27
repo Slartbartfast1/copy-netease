@@ -53,7 +53,67 @@ $("input").blur(function(){
 });
 
 //输入框默认输入结束;
+
+
+    // 功能区开始
+    $('.tabNav>li>a').mouseover(function(){
+        $(".cateCardList").eq($(this).index()).stop().slideDown();
+    });
+    $('.cateCardList').mouseleave(function(){
+        $(".cateCardList").stop().slideUp();
+    });
+    //功能区待完善
+
+
+    // 轮播图开始
+
+    let a=0;
+    $(".prev").click(function(){
+        a--;
+        slider();
+        console.log(a);
+    });
+    $(".next").click(function(){
+        a++;
+        slider();
+        console.log(a);
+    });
+    slider();
+
+
+      var timeout=  setInterval(function(){a++;slider()},3000);
+
+
+    $(".sliderBox").hover(function () {
+        clearInterval(timeout);
+    }, function () {
+        timeout = setInterval(function () { a++; slider(); }, 3000);
+    });
+    function slider(){
+        if(a==4){
+            a=0;
+        }
+        if(a==-1){
+            a=3;
+        }
+        $(".sliderImg ").eq(a).fadeIn().siblings(".sliderImg ").stop().fadeOut();
+        $(".dot").eq(a).addClass("active").siblings().removeClass("active");
+    }
+    $(".dot").hover(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        let index=$(this).index();
+        a = index;//将小圆点索引赋值给轮播图索引
+        $(".sliderImg ").eq(a).fadeIn().siblings(".sliderImg ").stop().fadeOut();
+    });
+
+
+
+
+
+
+
 });
+
 
 
 
