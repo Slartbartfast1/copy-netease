@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Microsoft Yahei", "微软雅黑", verdana;
     list-style: none;
+    text-decoration: none;
 }
 
 .clearfix:after {
@@ -594,12 +595,13 @@
     overflow: hidden;
 
 }
-.firstLarge .price {
+.firstLarge .price{
     font-size: 14px;
     padding-top: 17px;
     border-top: 1px solid #666;
     display: inline-block;
     z-index:999;
+    color: #666
 
 }
 .firstLargeImage{
@@ -621,9 +623,212 @@
     z-index: 1;
 }
 .firstLargeImage img:hover{
-    width:105%;
-    height: 105%;
+    transform:scale(1.05,1.05)
 }
+.secondLarge{
+    text-align: center;
+    background-color: #F3FAFB;
+    overflow: hidden;
+}
+.secondLarge .price{
+    font-size: 14px;
+    padding-top: 17px;
+    border-top: 1px solid #666;
+    display: inline-block;
+    z-index:999;
+    color: #666
+
+}
+.firstSmall{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.firstSmall .name {
+    font-size: 20px;
+    margin: 32px 0 10px 20px;
+    text-align: left;
+}
+.firstSmall .price{
+    font-size: 14px;
+    padding-top: 17px;
+    border-top: 1px solid #666;
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+    z-index:999;
+    color: #666
+}
+.firstSmallImage {
+    /*position: relative;*/
+    width: 357px;
+    height: 155px;
+    overflow: hidden;
+}
+.firstSmallImage img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all ease 1s 0s;
+}
+.firstSmallImage img:hover{
+    transform:scale(1.05,1.05);
+}
+.secondSmall{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.secondSmall .name {
+    font-size: 20px;
+    margin: 32px 0 10px 20px;
+    text-align: left;
+}
+.secondSmall .name .tips{
+    position: absolute;
+    top: -3px;
+    font-size: 11px;
+    margin-left: 2px;
+    text-align: center;
+    line-height: 19px;
+    width: 32px;
+    height: 21px;
+    color: #fff;
+    background: url(../images/上新.png) center no-repeat;
+}
+.secondSmall .price{
+    font-size: 14px;
+    padding-top: 17px;
+    border-top: 1px solid #666;
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+    z-index:999;
+    color: #666
+}
+.secondSmallImage {
+    /*position: relative;*/
+    width: 357px;
+    height: 155px;
+    overflow: hidden;
+}
+.secondSmallImage img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    transition: all ease 1s 0s;
+}
+.secondSmallImage img:hover{
+    transform:scale(1.05,1.05)
+}
+.slickItem{
+    position:relative;
+    width: 1100px;
+    height:344px;
+    /*background-color: pink;*/
+    top:150px;
+    left:50%;
+    margin-left:-550px;
+    /*overflow: hidden;*/
+}
+.slickItem .slickBox{
+    width: 1100px;
+    height:344px;
+    overflow: hidden;
+}
+.slickItem .slickBox .slickList{
+    width: 2200px;
+    position: relative;
+
+
+}
+.slickItem .slickBox .slickProduct {
+    margin-right: 10px;
+    height: 344px;
+    width:265px;
+    float:left;
+    background:url("../images/净化器.png") no-repeat ;
+
+}
+.slickItem .slickBox .hd{
+    width:265px;
+    height: 265px;
+
+    /*display: none;*/
+}
+.slickItem .slickBox .bd{
+    width:265px;
+    height: 79px;
+    top:265px;
+    position: absolute;
+    /*float: bottom;*/
+}
+.slickItem .slickBox .hd img{
+    width:265px;
+    height: 265px;
+    display: none;
+    position: absolute;
+    top:0;
+}
+.slickItem .slickBox .bd{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    /*margin-top:50px;*/
+}
+.slickItem .slickBox .bd a{
+    color:#666;
+    display: inline-block;
+    margin-top:10px;
+}
+.slickItem .slickBox .bd a:hover{
+    color:#b4a078;
+}
+.slickItem .slickBox .bd span{
+    display: block;
+    line-height: 13px;
+    height: 13px;
+    padding: 0;
+    color: #d4282d;
+    font-weight:normal;
+    margin-top:10px;
+}
+.slickShadow{
+    box-shadow:5px 5px 5px 1px rgba(0,0,0,.1);
+
+}
+.slickProduct{
+
+}
+.slickItem .prev{
+    left:-50px;
+    /*position: absolute;*/
+    /*top:50$*/
+}
+
+.slickItem .next{
+    /*background: url("../images/精灵图2.png") no-repeat -0px -5019px;*/
+    /*background-color: #D0C4AF;*/
+    /*z-index: 2;*/
+    right:-50px;
+}
+.slickItem .next:hover{
+
+}
+.slickItem .prev:hover{
+
+}
+
+
+
+
+
 
 
 

@@ -31,7 +31,7 @@ $(function(){
     $('.siteNav2  div  ').mouseleave(function(){
 
         $(this).children('a').css({'color':'#ccc'});
-    })
+    });
 
 
 //文字变色
@@ -51,7 +51,6 @@ $("input").focus(function(){
 $("input").blur(function(){
     $(".defaultText").css({'display':'block'});
 });
-
 //输入框默认输入结束;
 
 
@@ -68,15 +67,15 @@ $("input").blur(function(){
     // 轮播图开始
 
     let a=0;
-    $(".prev").click(function(){
+    $(".slider-button .prev").click(function(){
         a--;
         slider();
-        console.log(a);
+
     });
-    $(".next").click(function(){
+    $(".slider-button .next").click(function(){
         a++;
         slider();
-        console.log(a);
+
     });
     slider();
 
@@ -106,12 +105,40 @@ $("input").blur(function(){
         $(".sliderImg ").eq(a).fadeIn().siblings(".sliderImg ").stop().fadeOut();
     });
 
+});
+$(function(){
+    $(".slickProduct").mouseover(function(){
+        $(this).find("img").fadeIn(0);
+        $(this).addClass("slickShadow");
+        $(".slickBox .bd").eq($(this).index()).css({'background-color':'#F4EFE9'});
+    });
+    $(".slickProduct").mouseleave(function(){
+        $(this).find("img").fadeOut(0);
+        $(this).removeClass("slickShadow");
+        $(".slickBox .bd").eq($(this).index()).css({'background-color':'white'});
+    });
+    var count=0;
+
+    $(".slickItem .next").click(function(){
+        count++;
+        slick();
+    });
+    $(".slickItem .prev").click(function(){
+        count--;
+        slick();
+    });
+    var len=$(".slickProduct").length/4;
+    var slick=function(){
+        if(count>len-1){
+            count=len-1;
 
 
-
-
-
-
+        }
+        if(count==-1){
+            count=0;
+        }
+        $(".slickList").animate({left:-count*1100},600)
+    }
 });
 
 
