@@ -1,7 +1,7 @@
+
 //滚动公告栏开始
 $(function(){
-    // let clone=$(".billboard li").first().clone();
-    // $(".billdoard ul").append(clone);
+
     let i=0;
     let size=$(".billboard li").length;
     move();
@@ -55,11 +55,11 @@ $("input").blur(function(){
 
 
     // 功能区开始
-    $('.tabNav>li>a').mouseover(function(){
-        $(".cateCardList").eq($(this).index()).stop().slideDown();
+    $('.tabNav>li a').mouseenter(function(){
+        $(".cateCardList").eq($(this).index()).stop().show();
     });
     $('.cateCardList').mouseleave(function(){
-        $(".cateCardList").stop().slideUp();
+        $(".cateCardList").stop().hide();
     });
     //功能区待完善
 
@@ -108,12 +108,12 @@ $("input").blur(function(){
 });
 $(function(){
     $(".slickProduct").mouseover(function(){
-        $(this).find("img").fadeIn(0);
+        $(this).find("img").show();
         $(this).addClass("slickShadow");
         $(".slickBox .bd").eq($(this).index()).css({'background-color':'#F4EFE9'});
     });
     $(".slickProduct").mouseleave(function(){
-        $(this).find("img").fadeOut(0);
+        $(this).find("img").hide();
         $(this).removeClass("slickShadow");
         $(".slickBox .bd").eq($(this).index()).css({'background-color':'white'});
     });
@@ -131,15 +131,25 @@ $(function(){
     var slick=function(){
         if(count>len-1){
             count=len-1;
-
-
         }
         if(count==-1){
             count=0;
         }
-        $(".slickList").animate({left:-count*1100},600)
+        $(".slickList").animate({left:-count*1100},500)
     }
 });
+// $(function () {
+//     $(window).scroll(function () {
+//         var winTop = $(window).scrollTop();
+//         if (winTop >= 100) {
+//             $(".tabNav").css({position:'fixed',height:60,zIndex:9999});
+//
+//
+//         } else {
+//
+//         }
+//     });
+// });
 
 
 
