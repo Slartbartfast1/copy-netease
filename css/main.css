@@ -38,8 +38,6 @@
     position: absolute;
     height: 36px;
     width: 400px;
-    /*left:150px;*/
-
 }
 
 .siteNav1 .siteItem {
@@ -416,12 +414,9 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    /*padding-left: 50%;*/
     height: 200px;
-    /*background-color: pink;*/
     background-color: white;
 }
-
 .cateCardList li {
     position: relative;
     display: inline-block;
@@ -429,7 +424,6 @@
     margin-bottom: 30px;
     margin-left: 80px;
     margin-top: 0;
-
 }
 
 .sliderBox {
@@ -439,9 +433,6 @@
 }
 
 .sliderBox a {
-    /*display: block;*/
-    /*height: 400px;*/
-    /*background-color: pink;*/
 }
 
 .sliderBox img {
@@ -499,7 +490,6 @@
     width: 300px;
     height: 20px;
     position: relative;
-    /*background-color: rgba(0,0,0,.3);*/
     left: 50%;
     top: 380px;
     margin-left: -150px;
@@ -552,7 +542,6 @@
 .firstSmall, .secondSmall {
     width: 357px;
     height: 155px;
-    /*background-color: yellow;*/
     float: left;
 
     margin-left: 5px;
@@ -714,11 +703,9 @@
     position:relative;
     width: 1100px;
     height:344px;
-    /*background-color: pink;*/
     top:150px;
     left:50%;
     margin-left:-550px;
-    /*overflow: hidden;*/
 }
 .slickItem .slickBox{
     width: 1100px;
@@ -742,15 +729,12 @@
 .slickItem .slickBox .hd{
     width:265px;
     height: 265px;
-
-    /*display: none;*/
 }
 .slickItem .slickBox .bd{
     width:265px;
     height: 79px;
     top:265px;
     position: absolute;
-    /*float: bottom;*/
 }
 .slickItem .slickBox .hd img{
     width:265px;
@@ -763,7 +747,6 @@
     font-size: 14px;
     text-align: center;
     font-weight: 700;
-    /*margin-top:50px;*/
 }
 .slickItem .slickBox .bd a{
     color:#666;
@@ -791,14 +774,9 @@
 }
 .slickItem .prev{
     left:-50px;
-    /*position: absolute;*/
-    /*top:50$*/
 }
 
 .slickItem .next{
-    /*background: url("../images/精灵图2.png") no-repeat -0px -5019px;*/
-    /*background-color: #D0C4AF;*/
-    /*z-index: 2;*/
     right:-50px;
 }
 .footBox{
