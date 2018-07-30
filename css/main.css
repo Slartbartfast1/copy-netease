@@ -125,7 +125,7 @@
     cursor: pointer;
     width: 11px;
     height: 5px;
-    background: url("../images/精灵图.png") no-repeat 0px -321px;
+    background: url("../images/精灵图.png") no-repeat 0 -321px;
     margin-right: 5px;
     transition: all ease 0s 0s;
 }
@@ -185,7 +185,7 @@
     overflow: hidden;
     vertical-align: middle;
     cursor: pointer;
-    background: url("../images/精灵图.png") no-repeat 0px 0px;
+    background: url("../images/精灵图.png") no-repeat 0 0;
     margin-right: 5px;
     margin-left: 10px;
     transition: all ease 0s 0s;
@@ -273,8 +273,7 @@
     display: inline-block;
     overflow: hidden;
     vertical-align: middle;
-    /*cursor: pointer;*/
-    background: url("../images/精灵图.png") no-repeat 0px -146px;
+    background: url("../images/精灵图.png") no-repeat 0 -146px;
     margin-right: 5px;
     margin-left: 10px;
     transition: all ease 0s 0s;
@@ -315,10 +314,7 @@
 .searchButton i {
     display: inline-block;
     overflow: hidden;
-    /*vertical-align: middle;*/
-    /*cursor: pointer;*/
-    background: url("../images/精灵图.png") no-repeat 0px -146px;
-    background-position: 0 -291px;
+    background: url("../images/精灵图.png") no-repeat  0 -291px;
     height: 20px;
     width: 20px;
 }
@@ -367,7 +363,7 @@
 .slideDoor {
     display: inline-block;
     /*overflow: hidden;*/
-    background: url("../images/精灵图.png") no-repeat 0px -51px;
+    background: url("../images/精灵图.png") no-repeat 0 -51px;
     height: 19px;
     width: 19px;
     padding-left: 5px;
@@ -380,23 +376,13 @@
     /*text-align: center;*/
 }
 
-/*.slideDoor span{*/
-/*display: inline-block;*/
-/*!*background: url("精灵图1.png") no-repeat 0px -21px;*!*/
-/*height: 19px;*/
-/*z-index: 2;*/
-
-/*padding-right: 5px;*/
-
-/*}*/
-
 .tabNav {
     width: 1090px;
-    height: 30px;
+    height: 60px;
     position: absolute;
     display: block;
-    /*background-color: pink;*/
-    bottom: 45px;
+    background-color: white;
+    bottom: 0px;
     left: 50%;
     margin-left: -545px;
 }
@@ -405,7 +391,6 @@
     padding: 0 24px;
     display: inline-block;
 }
-
 .tabNav li > a {
     line-height: 30px;
     font-size: 13px;
@@ -482,9 +467,8 @@
     border-radius: 50%;
     left: 150px;
     top: 180px;
-    background: url("../images/精灵图2.png") no-repeat -0px -4839px;
-    background-color: #D0C4AF;
-}
+    background: url("../images/精灵图2.png") no-repeat -0px -4839px #D0C4AF;
+    }
 
 .slider-button {
     z-index: 9999;
@@ -504,8 +488,7 @@
     border-radius: 50%;
     right: 150px;
     top: 180px;
-    background: url("../images/精灵图2.png") no-repeat -0px -5019px;
-    background-color: #D0C4AF;
+    background: url("../images/精灵图2.png") no-repeat -0px -5019px  #D0C4AF;
 }
 
 .next:hover {
@@ -610,7 +593,7 @@
     height:100%;
     overflow: hidden;
     position:relative;
-    margin-top:0px;
+    margin-top:0;
 }
 .firstLargeImage img{
     width: 357px;
@@ -800,7 +783,7 @@
     margin-top:10px;
 }
 .slickShadow{
-    box-shadow:5px 0px 10px 1px rgba(0,0,0,.1);
+    box-shadow:5px 0 10px 1px rgba(0,0,0,.1);
 
 }
 .slickProduct{

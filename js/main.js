@@ -62,6 +62,18 @@ $("input").blur(function(){
         $(".cateCardList").stop().hide();
     });
     //功能区待完善
+    //固定功能区开始
+    $(function () {
+        $(window).scroll(function () {
+            var winTop = $(window).scrollTop();
+            if (winTop >= 216) {
+                $(".tabNav").css({position:'fixed',zIndex:99999,top:0});
+            } else {
+                $(".tabNav").css({position:'',zIndex:'',top:'' });
+            }
+        });
+    });
+    //固定功能区待完善
 
 
     // 轮播图开始
@@ -106,6 +118,7 @@ $("input").blur(function(){
     });
 
 });
+//四格轮播图开始
 $(function(){
     $(".slickProduct").mouseover(function(){
         $(this).find("img").show();
@@ -138,18 +151,9 @@ $(function(){
         $(".slickList").animate({left:-count*1100},500)
     }
 });
-// $(function () {
-//     $(window).scroll(function () {
-//         var winTop = $(window).scrollTop();
-//         if (winTop >= 100) {
-//             $(".tabNav").css({position:'fixed',height:60,zIndex:9999});
-//
-//
-//         } else {
-//
-//         }
-//     });
-// });
+//四格轮播图结束
+
+
 
 
 
